@@ -1,3 +1,5 @@
+import "./resetButton.css";
+
 export default function ResetButton({ setCounter, setCookiesPerSecond }) {
   return (
     <div>

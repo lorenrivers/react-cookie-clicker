@@ -1,0 +1,50 @@
+.upgrade-card {
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(3, auto);
+  border-radius: 4px;
+}
+
+.h2-name {
+  margin: 3px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.p-cost {
+  margin: 2px;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.p-cookievalue {
+  margin: 2px;
+  grid-area: 3 / 1 / 4 / 3;
+}
+
+.upgrade-btn {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media (min-width: 500px) {
+  .upgrade-card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    width: 100%;
+  }
+
+  .upgrade-btn {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+  .p-cost {
+    margin: 0px;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .p-cookievalue {
+    margin: 0px;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+}

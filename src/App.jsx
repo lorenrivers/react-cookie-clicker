@@ -16,25 +16,27 @@ export default function App() {
 
   return (
     <div>
-      <h1>Cookie Clicker</h1>
-      <Timer
-        counter={counter}
-        setCounter={setCounter}
-        cookiesPerSecond={cookiesPerSecond}
-      />
+      <div className="top-container">
+        <h1>Cookie Clicker</h1>
+        <Timer
+          counter={counter}
+          setCounter={setCounter}
+          cookiesPerSecond={cookiesPerSecond}
+        />
 
-      <CookieButton
-        counter={counter}
-        setCounter={setCounter}
-        cookiesPerSecond={cookiesPerSecond}
-      />
+        <CookieButton
+          counter={counter}
+          setCounter={setCounter}
+          cookiesPerSecond={cookiesPerSecond}
+        />
 
-      <ResetButton
-        setCounter={setCounter}
-        setCookiesPerSecond={setCookiesPerSecond}
-      />
+        <ResetButton
+          setCounter={setCounter}
+          setCookiesPerSecond={setCookiesPerSecond}
+        />
+      </div>
 
-      <div>
+      <div className="upgrade-container">
         {upgrades.map((upgrade) => (
           <UpgradeCard
             key={upgrade.id}

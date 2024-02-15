@@ -1,0 +1,10 @@
+.cookie-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 150px;
+  margin-bottom: 10px;
+}
+
+.cookie-btn:hover {
+  text-shadow: 5px 5px 10px #000000;
+}

@@ -1,3 +1,5 @@
+import "./upgradeCard.css";
+
 export default function UpgradeCard({
   name,
   cost,
@@ -8,11 +10,14 @@ export default function UpgradeCard({
   setCookiesPerSecond,
 }) {
   return (
-    <div className="upgrade-container">
-      <h2>{name}</h2>
-      <p>Cost: {cost} cookies</p>
-      <p>Increases cookies per second by {cookieValue} cookies</p>
+    <div className="upgrade-card">
+      <h2 className="h2-name">{name}</h2>
+      <p className="p-cost">Cost: {cost} cookies</p>
+      <p className="p-cookievalue">
+        Increases cookie earnings by {cookieValue}!
+      </p>
       <button
+        className="upgrade-btn"
         onClick={() => {
           if (counter >= cost) {
             setCounter(counter - cost);

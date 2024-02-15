@@ -1,0 +1,14 @@
+.timer {
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.timer p {
+  margin: 4px;
+}
