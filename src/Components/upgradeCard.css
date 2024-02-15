@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 .upgrade-card {
   background-color: #fff;
   margin: 5px;
@@ -24,14 +26,21 @@
 }
 
 .upgrade-btn {
+  font-family: "Poppins", sans-serif;
   grid-area: 1 / 2 / 2 / 3;
+  background-color: #ffd28f;
+  border: none;
+}
+
+.upgrade-btn:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 500px) {
   .upgrade-card {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 100%;
-    width: 100%;
+    width: 80%;
   }
 
   .upgrade-btn {
