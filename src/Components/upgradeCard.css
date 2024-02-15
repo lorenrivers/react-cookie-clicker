@@ -36,6 +36,12 @@
   opacity: 0.5;
 }
 
+@media (min-width: 400px) and (max-width: 500px) {
+  .upgrade-card {
+    width: 100%;
+  }
+}
+
 @media (min-width: 500px) {
   .upgrade-card {
     grid-template-columns: repeat(4, 1fr);
