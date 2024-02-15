@@ -6,10 +6,13 @@ export default function Timer({ counter, setCounter, cookiesPerSecond }) {
       setCounter((previousCounter) => previousCounter + cookiesPerSecond);
     }, 1000);
 
+    localStorage.setItem("cookies", counter.toString());
+    localStorage.setItem("cookiesPerSecond", cookiesPerSecond.toString());
+
     return () => {
       clearInterval(interval);
     };
-  }, [cookiesPerSecond]);
+  }, [counter, cookiesPerSecond]);
 
   return (
     <div>

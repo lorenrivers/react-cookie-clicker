@@ -7,8 +7,12 @@ import UpgradeCard from "./Components/UpgradeCard";
 import "./App.css";
 
 export default function App() {
-  const [counter, setCounter] = useState(0);
-  const [cookiesPerSecond, setCookiesPerSecond] = useState(1);
+  const [counter, setCounter] = useState(
+    parseInt(localStorage.getItem("cookies")) || 0
+  );
+  const [cookiesPerSecond, setCookiesPerSecond] = useState(
+    parseInt(localStorage.getItem("cookiesPerSecond")) || 1
+  );
 
   return (
     <div>
