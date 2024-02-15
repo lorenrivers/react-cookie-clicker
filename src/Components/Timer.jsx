@@ -9,7 +9,7 @@ export default function Timer({ counter, setCounter, cookiesPerSecond }) {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [cookiesPerSecond]);
 
   return (
     <div>

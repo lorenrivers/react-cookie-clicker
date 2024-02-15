@@ -25,7 +25,10 @@ export default function App() {
         cookiesPerSecond={cookiesPerSecond}
       />
 
-      <ResetButton setCounter={setCounter} />
+      <ResetButton
+        setCounter={setCounter}
+        setCookiesPerSecond={setCookiesPerSecond}
+      />
 
       <div>
         {upgrades.map((upgrade) => (
